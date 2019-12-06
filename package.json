@@ -1,0 +1,24 @@
+{
+  "name": "Restaurant",
+  "version": "1.0.0",
+  "description": "Odin restaurant project",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juakata/Restaurant.git"
+  },
+  "keywords": [],
+  "author": "Andoni Uzquiano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juakata/Restaurant/issues"
+  },
+  "homepage": "https://github.com/Juakata/Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
