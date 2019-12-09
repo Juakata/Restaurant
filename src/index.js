@@ -8,11 +8,12 @@ import food from './food.js';
 import contact from './contact.js';
 import Barman from './barman.jpg';
 
+let cont = document.getElementById('container');
 navbar();
-const main = document.createElement('MAIN');
+const main = document.createElement('main');
 main.id = 'main';
-container.appendChild(main);
 main.style.backgroundImage = `url(${Barman})`;
+cont.appendChild(main);
 let myInterval;
 let aux = 1;
 home();
@@ -38,7 +39,7 @@ document.getElementById('food').addEventListener('click', () => {
   food(2);
   myInterval = window.setInterval(function() {
     food(aux);
-    if (aux == 1) {
+    if (aux === 1) {
       aux = 2;
     } else {
       aux = 1;
