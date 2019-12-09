@@ -1,43 +1,43 @@
 import './style.css';
-import navbar from './navbar.js';
-import footer from './footer.js';
-import home from './home.js';
-import about from './about.js';
-import drinks from './drinks.js';
-import food from './food.js';
-import contact from './contact.js';
+import navbar from './navbar';
+import footer from './footer';
+import home from './home';
+import about from './about';
+import drinks from './drinks';
+import food from './food';
+import contact from './contact';
 import Barman from './barman.jpg';
 
-let cont = document.getElementById('container');
+const cont = document.getElementById('container');
 navbar();
 const main = document.createElement('main');
 main.id = 'main';
 main.style.backgroundImage = `url(${Barman})`;
 cont.appendChild(main);
-let myInterval;
+let timemenu;
 let aux = 1;
 home();
 footer();
 
 document.getElementById('about').addEventListener('click', () => {
   about();
-  clearInterval(myInterval);
+  clearInterval(timemenu);
 }, false);
 document.getElementById('home').addEventListener('click', () => {
   home();
-  clearInterval(myInterval);
+  clearInterval(timemenu);
 }, false);
 document.getElementById('drinks').addEventListener('click', () => {
   drinks();
-  clearInterval(myInterval);
+  clearInterval(timemenu);
 }, false);
 document.getElementById('contact').addEventListener('click', () => {
   contact();
-  clearInterval(myInterval);
+  clearInterval(timemenu);
 }, false);
 document.getElementById('food').addEventListener('click', () => {
   food(2);
-  myInterval = window.setInterval(function() {
+  timemenu = window.setInterval(function() {
     food(aux);
     if (aux === 1) {
       aux = 2;
