@@ -1,0 +1,21 @@
+const footer = () => {
+  const container = document.getElementById('container');
+  const foo = document.createElement('footer');
+  const ul = document.createElement('ul');
+  ul.classList.add('footer-wrapper');
+  const li1 = document.createElement('li');
+  const face = document.createElement('span');
+  face.classList.add('fa');
+  face.classList.add('fa-facebook');
+  li1.appendChild(face);
+  const li2 = document.createElement('li');
+  const inst = document.createElement('span');
+  inst.classList.add('fa');
+  inst.classList.add('fa-instagram');
+  li2.appendChild(inst);
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+  foo.appendChild(ul);
+  container.appendChild(foo);
+};
+export default footer;

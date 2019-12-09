@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #d1d1d1;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px black;
+}
+
+#main {
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.cont-info {
+  background: #363636;
+  padding: 10px;
+  max-width: 1000px;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-around;
+  background: #363636;
+  color: white;
+  margin: 0;
+  padding: 25px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.top-menu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.top-menu li:hover {
+  color: grey;
+}
+
+.logo {
+  width: 75px;
+  cursor: pointer;
+}
+
+.footer-wrapper {
+  margin: 0;
+  background: #363636;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-wrapper li{
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.fa-facebook {
+  background: #1e16ba;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.fa-facebook {
+  background: #1e16ba;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.fa-facebook:hover {
+  background: #4366d1;
+}
+
+.fa-instagram {
+  background: #d41cb8;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.fa-instagram:hover {
+  background: #e880dc;
+}
