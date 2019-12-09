@@ -4,12 +4,39 @@ body {
   background: #d1d1d1;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px black;
+}
+
 #main {
   padding: 50px;
-  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.cont-info {
+  background: #363636;
+  padding: 10px;
+  max-width: 1000px;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 1px solid white;
 }
 
 .top-menu {
