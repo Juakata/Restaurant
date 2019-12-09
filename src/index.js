@@ -14,16 +14,7 @@ const main = document.createElement('main');
 main.id = 'main';
 main.style.backgroundImage = `url(${Barman})`;
 cont.appendChild(main);
-(function timemenu() {
-  window.setInterval(function() {
-    food(aux);
-    if (aux === 1) {
-      aux = 2;
-    } else {
-      aux = 1;
-    }
-  }, 5000);
-}());
+let timemenu;
 let aux = 1;
 home();
 footer();
@@ -46,5 +37,12 @@ document.getElementById('contact').addEventListener('click', () => {
 }, false);
 document.getElementById('food').addEventListener('click', () => {
   food(2);
-  timemenu();
+  timemenu = window.setInterval(() => {
+    food(aux);
+    if (aux === 1) {
+      aux = 2;
+    } else {
+      aux = 1;
+    }
+  }, 5000);
 }, false);
