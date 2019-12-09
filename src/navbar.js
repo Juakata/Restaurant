@@ -8,6 +8,6 @@ const navbar = () => {
       <li id="food">Food</li>
     </ul>
   </nav>`;
-}
+};
 
 export default navbar;

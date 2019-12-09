@@ -1,6 +1,6 @@
 import './style.css';
 
-let container = document.getElementById("container");
+const container = document.getElementById('container');
 
 import navbar from './navbar.js';
 import footer from './footer.js';
@@ -12,8 +12,8 @@ import contact from './contact.js';
 import Barman from './barman.jpg';
 
 navbar();
-let main = document.createElement('MAIN');
-main.id = "main";
+const main = document.createElement('MAIN');
+main.id = 'main';
 container.appendChild(main);
 main.style.backgroundImage = `url(${Barman})`;
 let myInterval;
@@ -39,11 +39,11 @@ document.getElementById('contact').addEventListener('click', () => {
 }, false);
 document.getElementById('food').addEventListener('click', () => {
   food(2);
-  myInterval = window.setInterval(function(){
+  myInterval = window.setInterval(function() {
     food(aux);
-    if(aux == 1){
+    if (aux == 1) {
       aux = 2;
-    }else{
+    } else {
       aux = 1;
     }
   }, 5000);
