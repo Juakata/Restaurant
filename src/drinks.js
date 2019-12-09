@@ -1,6 +1,7 @@
 import DrinksMenu from './drinks.png';
 
 const drinks = () => {
+  const main = document.getElementById('main');
   main.innerHTML = '';
   const img = document.createElement('img');
   img.setAttribute('src', DrinksMenu);

@@ -1,4 +1,5 @@
 const home = () => {
+  const main = document.getElementById('main');
   main.innerHTML = '';
   const h1 = document.createElement('h1');
   const text = document.createTextNode('CROESO, WELCOME TO PITCH BAR & EATERY, MILL LANE CARDIFF');

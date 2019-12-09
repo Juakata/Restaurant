@@ -1,7 +1,8 @@
 import BreakFast from './breakfast.png';
 import Sandwiches from './sandwiches.png';
 
-const food = (aux) =>{
+const food = (aux) => {
+  const main = document.getElementById('main');
   main.innerHTML = '';
   const img = document.createElement('img');
   img.setAttribute('alt', 'food');

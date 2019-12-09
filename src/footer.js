@@ -1,4 +1,5 @@
 const footer = () => {
+  const container = document.getElementById('container');
   const foo = document.createElement('footer');
   const ul = document.createElement('ul');
   ul.classList.add('footer-wrapper');

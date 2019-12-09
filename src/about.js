@@ -1,4 +1,5 @@
 const about = () => {
+  const main = document.getElementById('main');
   main.innerHTML = '';
   const h1 = document.createElement('h1');
   const text = document.createTextNode('What Our Guests Say');

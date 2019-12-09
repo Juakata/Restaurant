@@ -1,4 +1,5 @@
 const contact = () => {
+  const main = document.getElementById('main');
   main.innerHTML = '';
   const contInfo = document.createElement('div');
   contInfo.classList.add('cont-info');

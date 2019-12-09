@@ -1,4 +1,5 @@
 const navbar = () => {
+  const container = document.getElementById('container');
   container.innerHTML += `<nav>
     <ul class="top-menu">
       <li id="about">About us</li>

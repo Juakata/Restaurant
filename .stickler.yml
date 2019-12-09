@@ -6,3 +6,4 @@ files:
   ignore:
       - 'dist/*'
       - 'node_modules/*'
+      - '.eslintrc.js'

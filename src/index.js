@@ -1,7 +1,4 @@
 import './style.css';
-
-const container = document.getElementById('container');
-
 import navbar from './navbar.js';
 import footer from './footer.js';
 import home from './home.js';
