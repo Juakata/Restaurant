@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Juakata/Restaurant.git"
   },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
   "keywords": [],
   "author": "Andoni Uzquiano",
   "license": "MIT",
