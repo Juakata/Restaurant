@@ -18,25 +18,25 @@ let timemenu;
 let aux = 1;
 home();
 footer();
-
-for(let j = 1; j <= 2; j += 1){
-  document.getElementById('about'+j).addEventListener('click', () => {
+const array = [1,2];
+array.forEach((num) => {
+  document.getElementById('about' + num).addEventListener('click', () => {
     about();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('home' + j).addEventListener('click', () => {
+  document.getElementById('home' + num).addEventListener('click', () => {
     home();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('drinks' + j).addEventListener('click', () => {
+  document.getElementById('drinks' + num).addEventListener('click', () => {
     drinks();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('contact' + j).addEventListener('click', () => {
+  document.getElementById('contact' + num).addEventListener('click', () => {
     contact();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('food' + j).addEventListener('click', () => {
+  document.getElementById('food' + num).addEventListener('click', () => {
     food(2);
     timemenu = window.setInterval(() => {
       food(aux);
@@ -47,12 +47,12 @@ for(let j = 1; j <= 2; j += 1){
       }
     }, 5000);
   }, false);
-}
+});
 document.getElementById('i-menu').addEventListener('click', () => {
   navbarObject.displaySecondNav();
 }, false);
 window.addEventListener('resize', () => {
-  if(window.innerWidth > 625){
+  if (window.innerWidth > 625) {
     document.getElementById('second-nav').style.display = 'none';
     document.getElementById('i-menu').className = 'fa fa-bars';
   }

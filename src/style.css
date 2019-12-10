@@ -46,7 +46,8 @@ p {
   font-size: 20px;
   list-style: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 15px;
+  padding-left: 50px;
 }
 
 .second-top-menu li:hover{
