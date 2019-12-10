@@ -28,15 +28,15 @@ const navbar = () => {
 };
 
 const displaySecondNav = () => {
-  let i = document.getElementById('i-menu');
-  let secondNav = document.getElementById('second-nav');
-  if(i.className == "fa fa-bars"){
-    i.className = "fa fa-times";
+  const i = document.getElementById('i-menu');
+  const secondNav = document.getElementById('second-nav');
+  if (i.className === 'fa fa-bars') {
+    i.className = 'fa fa-times';
     secondNav.style.display = 'block';
-  }else{
-    i.className = "fa fa-bars";
+  } else {
+    i.className = 'fa fa-bars';
     secondNav.style.display = 'none';
   }
-}
+};
 
-export {navbar, displaySecondNav};
+export { navbar, displaySecondNav };

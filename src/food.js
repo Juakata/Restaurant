@@ -6,7 +6,7 @@ const food = (aux) => {
   main.innerHTML = '';
   const img = document.createElement('img');
   img.setAttribute('alt', 'food');
-  img.classList.add("img-fix");
+  img.classList.add('img-fix');
   if (aux === 1) {
     img.setAttribute('src', Sandwiches);
   } else {

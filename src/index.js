@@ -19,24 +19,24 @@ let aux = 1;
 home();
 footer();
 
-for(let j = 1; j <= 2; j+=1){
+for(let j = 1; j <= 2; j += 1){
   document.getElementById('about'+j).addEventListener('click', () => {
     about();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('home'+j).addEventListener('click', () => {
+  document.getElementById('home' + j).addEventListener('click', () => {
     home();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('drinks'+j).addEventListener('click', () => {
+  document.getElementById('drinks' + j).addEventListener('click', () => {
     drinks();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('contact'+j).addEventListener('click', () => {
+  document.getElementById('contact' + j).addEventListener('click', () => {
     contact();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('food'+j).addEventListener('click', () => {
+  document.getElementById('food' + j).addEventListener('click', () => {
     food(2);
     timemenu = window.setInterval(() => {
       food(aux);
@@ -54,6 +54,6 @@ document.getElementById('i-menu').addEventListener('click', () => {
 window.addEventListener('resize', () => {
   if(window.innerWidth > 625){
     document.getElementById('second-nav').style.display = 'none';
-    document.getElementById('i-menu').className = "fa fa-bars";
+    document.getElementById('i-menu').className = 'fa fa-bars';
   }
 }, false);
