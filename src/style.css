@@ -30,6 +30,35 @@ p {
   min-height: 80vh;
 }
 
+.nav-end, .second-nav-end {
+  display: none;
+}
+
+.second-top-menu {
+  display: flex;
+  flex-direction: column;
+  background: #808080;
+  padding: 0;
+  margin: 0;
+}
+
+.second-top-menu li{
+  font-size: 20px;
+  list-style: none;
+  cursor: pointer;
+  padding: 15px;
+  padding-left: 50px;
+}
+
+.second-top-menu li:hover{
+  color: white;
+  background: #363636;
+}
+
+.img-fix {
+  width: 60%;
+}
+
 .cont-info {
   background: #363636;
   padding: 10px;
@@ -78,15 +107,13 @@ p {
   cursor: pointer;
 }
 
-.fa-facebook {
-  background: #1e16ba;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
+.fa {
+  font-size: 30px;
 }
 
 .fa-facebook {
   background: #1e16ba;
+  font-size: 20px;
   color: white;
   padding: 10px 15px;
   border-radius: 20px;
@@ -98,6 +125,7 @@ p {
 
 .fa-instagram {
   background: #d41cb8;
+  font-size: 20px;
   color: white;
   padding: 10px;
   border-radius: 20px;
@@ -105,4 +133,37 @@ p {
 
 .fa-instagram:hover {
   background: #e880dc;
+}
+
+.fa:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+  .img-fix {
+    width: 95%;
+  }
+}
+
+@media(max-width: 625px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  #main {
+    padding: 15px 5px;
+  }
+
+  .nav-start {
+    display: none;
+  }
+
+  .nav-end {
+    display: block;
+  }
 }
