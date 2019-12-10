@@ -18,25 +18,25 @@ let timemenu;
 let aux = 1;
 home();
 footer();
-const array = [1,2];
+const array = [1, 2];
 array.forEach((num) => {
-  document.getElementById('about' + num).addEventListener('click', () => {
+  document.getElementById(`about${num}`).addEventListener('click', () => {
     about();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('home' + num).addEventListener('click', () => {
+  document.getElementById(`home${num}`).addEventListener('click', () => {
     home();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('drinks' + num).addEventListener('click', () => {
+  document.getElementById(`drinks${num}`).addEventListener('click', () => {
     drinks();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('contact' + num).addEventListener('click', () => {
+  document.getElementById(`contact${num}`).addEventListener('click', () => {
     contact();
     clearInterval(timemenu);
   }, false);
-  document.getElementById('food' + num).addEventListener('click', () => {
+  document.getElementById(`food${num}`).addEventListener('click', () => {
     food(2);
     timemenu = window.setInterval(() => {
       food(aux);
