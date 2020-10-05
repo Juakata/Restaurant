@@ -13,7 +13,7 @@ javascript and webpack.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Juakata/Restaurant/development/dist/index.html)
+[Live Demo Link](https://foodiess.netlify.app)
 
 ## Author
 
