@@ -3,7 +3,7 @@
 > This project is a simple page for a restaurant rendering the element with
 javascript and webpack.
 
-![restaurant](https://user-images.githubusercontent.com/11781597/70458574-f3af3e00-1a77-11ea-8729-549289b10dcd.png)
+![restaurant](https://raw.githack.com/Juakata/Restaurant/development/dist/index.html)
 
 ## Built With
 
